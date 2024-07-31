@@ -3,6 +3,8 @@ const app = express();
 const bodyParser = require('body-parser');
 const cors = require('cors');
 const AuthRouter = require('./Routes/AuthRoutes');
+const dotenv = require('dotenv');
+dotenv.config();
 //const ProductRouter = require('./Routes/ProductRouter');
 
 require('dotenv').config();
@@ -20,3 +22,4 @@ app.use('/auth', AuthRouter);
 app.listen(3000,()=>{
     console.log('Server is running on  port 3000');
 });
+//console.log('JWT_SECRET:', process.env.JWT_SECRET);
