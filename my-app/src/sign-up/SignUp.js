@@ -1,4 +1,7 @@
-import React from 'react'
+import React from 'react';
+import { Link } from 'react-router-dom';
+import'./SignUp.css'
+import { BrowserRouter as Router,Routes,Route } from "react-router-dom";
 
 // import { FaUser } from "react-icons/fa";
 // import { MdEmail } from "react-icons/md";
@@ -6,6 +9,7 @@ import React from 'react'
 
 
 export const SignUp = () => {
+
   return (
     <div className='wrapper'>
     <form action="">
@@ -15,7 +19,7 @@ export const SignUp = () => {
             {/* <FaUser className='icon'/> */}
          </div>
          <div className='input-box'>
-            <input type="email" placeholder='Email-Id'  required/>
+            <input type="email" placeholder='Email-ID'  required/>
             {/* <MdEmail className='icon'/> */}
          </div>
          <div className='input-box'>
@@ -30,7 +34,11 @@ export const SignUp = () => {
             <a href="#">Forgot Password</a>
          </div> */}
         
-        <button className="submit-btn"type='submit'>login</button>
+        <div className="Submit-btn1">
+        <span className='btn-in'>
+          <Link to="/"><span className='inside-txt'>Login</span></Link>
+         </span>
+        </div>
 
         {/* <div className="registration-link">
             <p>
