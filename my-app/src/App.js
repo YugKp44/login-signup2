@@ -9,7 +9,7 @@ import { Home } from "./homepage/home";
 
 
 function App() {
-  const PrivateRoute=({component:Component,...rest})=>{
+  
     
     
     
@@ -31,5 +31,5 @@ function App() {
     </div>
   );
 }
-}
+
 export default App;
