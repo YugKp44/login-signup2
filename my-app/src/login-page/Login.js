@@ -47,7 +47,7 @@ const handlelogin = async (e) => {
     setLoading(true);  // Show loading animation
 
     try {
-        const url = "http://localhost:8000/auth/login";
+        const url = "https://login-signup-backend-self.vercel.app/auth/login";
         const response = await fetch(url, {
             method: 'POST',
             headers: {
