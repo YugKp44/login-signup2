@@ -1,0 +1,111 @@
+.create {
+
+  font-size: 10px;
+  text-align: center;
+  color: aliceblue;
+  padding-bottom: 40px;
+  font-weight: 500;
+
+}
+.wrapper1 {
+  width: 450px;
+  height: 450px;
+  background: transparent;
+  opacity: 0.9;
+  border: 2px solid rgba(255, 255, 255,.2);
+  padding: 30px 40px;
+  border-radius: 10px;
+  backdrop-filter: blur(60px);
+  
+  box-shadow: 0 0 40px rgba(214, 230, 230, 0.6);
+    transition: box-shadow 0.3s ease-in-out;
+}
+.wrapper1 h1 {
+  font-size: 40px;
+  text-align: center;
+  color: aliceblue;
+  padding-bottom: 30px;
+  font-weight: 500;
+}
+.wrapper1.input-box {
+  position: relative;
+  width: 100%;
+  height: 50px;
+
+  margin: 30px, 0;
+}
+.input-box input {
+  width: 100%;
+  height: 50px;
+  margin-top: 30px;
+  background: transparent;
+
+ 
+  outline: none;
+  border: 2px solid rgba(255, 255, 255, .2);
+  border-radius: 40px;
+  font-size:1.2rem;
+  color: #ffff;
+  padding: 20px 45px 20px 20px;
+
+}
+.input-box::placeholder{
+    color: white;
+    font-size: 30px;
+    position: relative;
+    
+
+
+}
+.input-box .icon{
+ position: relative;
+ left: 140px;
+ bottom: 27px;
+    transform: translateY(-50%);
+    font-size: 25px;
+    color: white;
+}
+.submit-btn{
+  width: 100%;
+  height: 45px;
+  background-color: aliceblue;
+  border: none;
+  outline: none;
+  border-radius: 40px;
+  box-shadow: 0 0 10px rgba(0,0,0,.1);
+  cursor: pointer;
+  font-size: 20px;
+  color: #0b0a0a;
+  font-weight: 700;
+  margin-top: 40px;
+
+
+}
+.registration-link{
+ font-size: 14.5px;
+text-align: center;
+margin: 20px 0 15px;
+
+
+}
+.registration-link p a{
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+
+
+}
+.registration-link p a:hover{
+  text-decoration: underline;
+}
+.noacc{
+  color: aliceblue;
+  padding-right: 15px;
+  font-size: 17px;
+}
+h1{
+  color: rgb(195, 200, 205);
+}
+.login{
+  margin-top: 20px;
+}
