@@ -5,6 +5,14 @@ const cors = require('cors');
 const AuthRouter = require('./Routes/AuthRoutes');
 //const ProductRouter = require('./Routes/ProductRouter');
 
+
+const corsOptions = {
+    origin: 'https://login-signup2-ui.vercel.app', // Your frontend's origin
+    optionsSuccessStatus: 200
+};
+
+app.use(cors(corsOptions));
+
 require('dotenv').config();
 require('./Models/db');
 const PORT = process.env.PORT || 8080;
