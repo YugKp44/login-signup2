@@ -4,6 +4,10 @@ const bodyParser = require('body-parser');
 const cors = require('cors');
 const AuthRouter = require('./Routes/AuthRoutes');
 //const ProductRouter = require('./Routes/ProductRouter');
+const corsOptions = {
+    origin: 'https://login-signup2-ui.vercel.app', // Your frontend's origin
+    optionsSuccessStatus: 200
+};
 
 require('dotenv').config();
 require('./Models/db');
