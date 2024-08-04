@@ -47,7 +47,7 @@ export const SignUp = () => {
       setLoading(true);  // Show loading animation
 
       try {
-         const url = "https://login-signup-backend-self.vercel.app/auth/signup";
+         const url = "http://localhost:8000/auth/signup";
          const response = await fetch(url, {
             method: 'POST',
             headers: {
