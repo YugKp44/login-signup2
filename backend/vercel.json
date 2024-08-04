@@ -1,15 +1,21 @@
 {
-    "version": 2,
-    "builds": [
+  "headers": [
+    {
+      "source": "/api/(.*)",
+      "headers": [
         {
-            "src": "index.js",
-            "use": "@vercel/node"
-        }
-    ],
-    "routes": [
+          "key": "Access-Control-Allow-Origin",
+          "value": "https://login-signup2-ui.vercel.app"
+        },
         {
-            "src": "/(.*)",
-            "dest": "index.js"
+          "key": "Access-Control-Allow-Methods",
+          "value": "GET, POST, PUT, DELETE, OPTIONS"
+        },
+        {
+          "key": "Access-Control-Allow-Headers",
+          "value": "Content-Type, Authorization"
         }
-    ]
+      ]
+    }
+  ]
 }
